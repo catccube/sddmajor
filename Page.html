@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+<style>
+
+h1{
+  font-family: 'Nunito', sans-serif;
+}
+
+h2{
+  font-family: 'Nunito', sans-serif;
+  margin: 5px 10px 5px 10px;
+}
+
+button{
+  font-family: 'Nunito', sans-serif;
+  margin: 5px 5px 5px 5px;
+}
+
+div{
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 5px 10px 5px 10px;
+  background-color: lightgray;
+}
+
+input{
+  margin: 10px 10px 10px 10px;
+  width: 100%;
+}
+
+
+</style>
+</head>
+<body>
+<h1>App Name</h1>
+
+<div>
+<h2>Symptoms</h2>
+  <input type="text" id="symptom">
+  <br>
+  <button id="B1">Diarrhea</button>
+  <button id="B2">Constipation</button>
+  <button id="B3">Bloating</button>
+  <button id="B4">Abdominal Pain</button>
+  <button id="B5">Nausea</button>
+  <button id="B6">Gas</button>
+  <button id="B7">Vomiting</button>
+  <button id="B8">Fatigue</button>
+  <button id="B9">Fever</button>
+  <button id="B10">Rash</button>
+  <button id="B11">Headache</button>
+
+</div>
+
+<div>
+  <h2>Diet</h2>
+  <input type="text" id="diet">
+  <br>
+  <button id="C1">Gluten</button>
+  <button id="C2">Dairy</button>
+  <button id="C3">Fruits</button>
+  <button id="C4">Vegetables</button>
+  <button id="C5">Whole Grains</button>
+  <button id="C6">Legumes</button>
+  <button id="C7">Fried Food</button>
+  <button id="C8">Caffiene</button>
+  <button id="C9">Chocolate</button>
+  <button id="C10">Alcohol</button>
+
+
+</div>
+ 
+<div>
+  <button id="submitButton">Submit</button>
+</div>
+
+</body>
+  <script>
+  //SYMPTOMS
+  var symptoms = '';
+    
+  //symptom buttons
+  document.getElementById('B1').addEventListener('click', function() {
+    symptoms = symptoms+'diarrhea, ';
+    document.getElementById('symptom').value = symptoms;
+  });
+  
+    document.getElementById('B2').addEventListener('click', function() {
+    symptoms = symptoms+'constipation, ';
+    document.getElementById('symptom').value = symptoms;
+  });
+  
+  document.getElementById('B3').addEventListener('click', function() {
+    symptoms = symptoms+'bloating, ';
+    document.getElementById('symptom').value = symptoms;
+  });
+  
+    document.getElementById('B4').addEventListener('click', function() {
+    symptoms = symptoms+'abdominal pain, ';
+    document.getElementById('symptom').value = symptoms;
+  });
+  
+    document.getElementById('B5').addEventListener('click', function() {
+    symptoms = symptoms+'nausea, ';
+    document.getElementById('symptom').value = symptoms;
+  });
+  
+    document.getElementById('B6').addEventListener('click', function() {
+    symptoms = symptoms+'gas, ';
+    document.getElementById('symptom').value = symptoms;
+  });
+  
+    document.getElementById('B7').addEventListener('click', function() {
+    symptoms = symptoms+'vomiting, ';
+    document.getElementById('symptom').value = symptoms;
+  });
+  
+    document.getElementById('B8').addEventListener('click', function() {
+    symptoms = symptoms+'fatigue, ';
+    document.getElementById('symptom').value = symptoms;
+  });
+  
+    document.getElementById('B9').addEventListener('click', function() {
+    symptoms = symptoms+'fever, ';
+    document.getElementById('symptom').value = symptoms;
+  });
+  
+    document.getElementById('B10').addEventListener('click', function() {
+    symptoms = symptoms+'rash, ';
+    document.getElementById('symptom').value = symptoms;
+  });
+  
+    document.getElementById('B11').addEventListener('click', function() {
+    symptoms = symptoms+'headache, ';
+    document.getElementById('symptom').value = symptoms;
+  });
+  
+
+  
+  // DIET
+  var diets = '';
+    
+  //Diet buttons
+  document.getElementById('C1').addEventListener('click', function() {
+    diets = diets+'gluten, ';
+    document.getElementById('diet').value = diets;
+  });
+  
+    document.getElementById('C2').addEventListener('click', function() {
+    diets = diets+'dairy, ';
+    document.getElementById('diet').value = diets;
+  });
+  
+  document.getElementById('C3').addEventListener('click', function() {
+    diets = diets+'fruits, ';
+    document.getElementById('diet').value = diets;
+  });
+  
+    document.getElementById('C4').addEventListener('click', function() {
+    diets = diets+'vegetables, ';
+    document.getElementById('diet').value = diets;
+  });
+  
+    document.getElementById('C5').addEventListener('click', function() {
+    diets = diets+'wholegrains, ';
+    document.getElementById('diet').value = diets;
+  });
+  
+    document.getElementById('C6').addEventListener('click', function() {
+    diets = diets+'legumes, ';
+    document.getElementById('diet').value = diets;
+  });
+  
+    document.getElementById('C7').addEventListener('click', function() {
+    diets = diets+'friedfood, ';
+    document.getElementById('diet').value = diets;
+  });
+    
+    document.getElementById('C8').addEventListener('click', function() {
+    diets = diets+'caffiene, ';
+    document.getElementById('diet').value = diets;
+  });
+    
+    document.getElementById('C9').addEventListener('click', function() {
+    diets = diets+'chocolate, ';
+    document.getElementById('diet').value = diets;
+  });
+    
+    document.getElementById('C10').addEventListener('click', function() {
+    diets = diets+'alcohol, ';
+    document.getElementById('diet').value = diets;
+  });
+ 
+ //SUBMIT
+    
+    //submit button
+  document.getElementById('submitButton').addEventListener('click', function() {
+    google.script.run.userClicked(symptoms,diets);
+  });
+  </script>
+</html>
