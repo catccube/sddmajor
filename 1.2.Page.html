@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+<style>
+
+h1{
+  font-family: 'Nunito', sans-serif;
+}
+
+h2{
+  font-family: 'Nunito', sans-serif;
+  margin: 5px 10px 5px 10px;
+}
+
+button{
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  margin: 5px 5px 5px 5px;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 5px;
+}
+
+div{
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 5px 10px 5px 10px;
+  background-color: lightgray;
+}
+
+input{
+  margin: 10px 10px 10px 10px;
+  width: 100%;
+}
+
+
+</style>
+</head>
+<body>
+<h1>App Name</h1>
+
+<div>
+<h2>Symptoms</h2>
+
+  <button id="B1">Diarrhea</button>
+  <button id="B2">Constipation</button>
+  <button id="B3">Bloating</button>
+  <button id="B4">Abdominal Pain</button>
+  <button id="B5">Nausea</button>
+  <button id="B6">Gas</button>
+  <button id="B7">Vomiting</button>
+  <button id="B8">Fatigue</button>
+  <button id="B9">Fever</button>
+  <button id="B10">Rash</button>
+  <button id="B11">Headache</button>
+</div>
+
+<div>
+  <h2>Diet</h2>
+  <button id="C1">Gluten</button>
+  <button id="C2">Dairy</button>
+  <button id="C3">Fruits</button>
+  <button id="C4">Vegetables</button>
+  <button id="C5">Whole Grains</button>
+  <button id="C6">Legumes</button>
+  <button id="C7">Fried Food</button>
+  <button id="C8">Caffiene</button>
+  <button id="C9">Chocolate</button>
+  <button id="C10">Alcohol</button>
+  <button id="C11">Sugar</button>
+</div>
+ 
+<div>
+  <button id="submitButton">Submit</button>
+</div>
+
+</body>
+  <script>
+  
+
+  //SYMPTOMS
+  var symptoms = '';
+  
+    
+  //symptom buttons
+
+    document.getElementById('B1').addEventListener('click', function() {
+    symptoms = symptoms+'diarrhea, ';
+    B1.style.backgroundColor = 'darkgray';
+    B1.style.color = 'white';
+    
+  });
+  
+    document.getElementById('B2').addEventListener('click', function() {
+    symptoms = symptoms+'constipation, ';
+    B2.style.backgroundColor = 'darkgray';
+    B2.style.color = 'white';
+  });
+  
+    document.getElementById('B3').addEventListener('click', function() {
+    symptoms = symptoms+'bloating, ';
+    B3.style.backgroundColor = 'darkgray';
+    B3.style.color = 'white';
+  });
+  
+    document.getElementById('B4').addEventListener('click', function() {
+    symptoms = symptoms+'abdominal pain, ';  
+    B4.style.backgroundColor = 'darkgray';
+    B4.style.color = 'white';
+  });
+  
+    document.getElementById('B5').addEventListener('click', function() {
+    symptoms = symptoms+'nausea, ';
+    B5.style.backgroundColor = 'darkgray';
+    B5.style.color = 'white';
+  });
+  
+    document.getElementById('B6').addEventListener('click', function() {
+    symptoms = symptoms+'gas, ';
+    B6.style.backgroundColor = 'darkgray';
+    B6.style.color = 'white';
+  });
+  
+    document.getElementById('B7').addEventListener('click', function() {
+    symptoms = symptoms+'vomiting, ';
+    B7.style.backgroundColor = 'darkgray';
+    B7.style.color = 'white';
+  });
+  
+    document.getElementById('B8').addEventListener('click', function() {
+    symptoms = symptoms+'fatigue, ';
+    B8.style.backgroundColor = 'darkgray';
+    B8.style.color = 'white';
+  });
+  
+    document.getElementById('B9').addEventListener('click', function() {
+    symptoms = symptoms+'fever, ';
+    B9.style.backgroundColor = 'darkgray';
+    B9.style.color = 'white';
+  });
+  
+    document.getElementById('B10').addEventListener('click', function() {
+    symptoms = symptoms+'rash, ';
+    B10.style.backgroundColor = 'darkgray';
+    B10.style.color = 'white';
+  });
+  
+    document.getElementById('B11').addEventListener('click', function() {
+    symptoms = symptoms+'headache, ';
+    B11.style.backgroundColor = 'darkgray';
+    B11.style.color = 'white';
+  });
+  
+
+  // DIET
+  var diets = '';
+    
+  //Diet buttons
+  document.getElementById('C1').addEventListener('click', function() {
+    diets = diets+'gluten, ';
+    C1.style.backgroundColor = 'darkgray';
+    C1.style.color = 'white';
+  });
+  
+    document.getElementById('C2').addEventListener('click', function() {
+    diets = diets+'dairy, ';
+    C2.style.backgroundColor = 'darkgray';
+    C2.style.color = 'white';
+  });
+  
+  document.getElementById('C3').addEventListener('click', function() {
+    diets = diets+'fruits, ';
+    C3.style.backgroundColor = 'darkgray';
+    C3.style.color = 'white';
+  });
+  
+    document.getElementById('C4').addEventListener('click', function() {
+    diets = diets+'vegetables, ';
+    C4.style.backgroundColor = 'darkgray';
+    C4.style.color = 'white';
+  });
+  
+    document.getElementById('C5').addEventListener('click', function() {
+    diets = diets+'wholegrains, ';
+    C5.style.backgroundColor = 'darkgray';
+    C5.style.color = 'white';
+  });
+  
+    document.getElementById('C6').addEventListener('click', function() {
+    diets = diets+'legumes, ';
+    C6.style.backgroundColor = 'darkgray';
+    C6.style.color = 'white';
+  });
+  
+    document.getElementById('C7').addEventListener('click', function() {
+    diets = diets+'friedfood, ';
+    C7.style.backgroundColor = 'darkgray';
+    C7.style.color = 'white';
+  });
+    
+    document.getElementById('C8').addEventListener('click', function() {
+    diets = diets+'caffiene, ';
+    C8.style.backgroundColor = 'darkgray';
+    C8.style.color = 'white';
+  });
+    
+    document.getElementById('C9').addEventListener('click', function() {
+    diets = diets+'chocolate, ';
+    C9.style.backgroundColor = 'darkgray';
+    C9.style.color = 'white';
+  });
+    
+    document.getElementById('C10').addEventListener('click', function() {
+    diets = diets+'alcohol, ';
+    C10.style.backgroundColor = 'darkgray';
+    C10.style.color = 'white';
+  });
+  
+    document.getElementById('C11').addEventListener('click', function() {
+    diets = diets+'sugar, ';
+    C11.style.backgroundColor = 'darkgray';
+    C11.style.color = 'white';
+  });
+ 
+ //SUBMIT
+    
+    //submit button
+  document.getElementById('submitButton').addEventListener('click', function() {
+    google.script.run.userClicked(symptoms,diets);
+    alert("Record Submited");
+    diets = " ";
+    symptoms = " ";
+    B1.style.backgroundColor = 'whitesmoke';
+    B1.style.color = 'black';
+    B1.style.borderRadius = '5px';
+    B2.style.backgroundColor = 'whitesmoke';
+    B2.style.color = 'black';
+    B2.style.borderRadius = '5px';
+    B3.style.backgroundColor = 'whitesmoke';
+    B3.style.color = 'black';
+    B3.style.borderRadius = '5px';
+    B4.style.backgroundColor = 'whitesmoke';
+    B4.style.color = 'black';
+    B4.style.borderRadius = '5px';
+    B5.style.backgroundColor = 'whitesmoke';
+    B5.style.color = 'black';
+    B5.style.borderRadius = '5px';
+    B6.style.backgroundColor = 'whitesmoke';
+    B6.style.color = 'black';
+    B6.style.borderRadius = '5px';
+    B7.style.backgroundColor = 'whitesmoke';
+    B7.style.color = 'black';
+    B7.style.borderRadius = '5px';
+    B8.style.backgroundColor = 'whitesmoke';
+    B8.style.color = 'black';
+    B8.style.borderRadius = '5px';
+    B9.style.backgroundColor = 'whitesmoke';
+    B9.style.color = 'black';
+    B9.style.borderRadius = '5px';
+    B10.style.backgroundColor = 'whitesmoke';
+    B10.style.color = 'black';
+    B10.style.borderRadius = '5px';
+    B11.style.backgroundColor = 'whitesmoke';
+    B11.style.color = 'black';
+    B11.style.borderRadius = '5px';
+    B12.style.backgroundColor = 'whitesmoke';
+    B12.style.color = 'black';
+    B12.style.borderRadius = '5px'; 
+    C1.style.backgroundColor = 'whitesmoke';
+    C1.style.color = 'black';
+    C1.style.borderRadius = '5px';
+    C2.style.backgroundColor = 'whitesmoke';
+    C2.style.color = 'black';
+    C2.style.borderRadius = '5px';
+    C3.style.backgroundColor = 'whitesmoke';
+    C3.style.color = 'black';
+    C3.style.borderRadius = '5px';
+    C4.style.backgroundColor = 'whitesmoke';
+    C4.style.color = 'black';
+    C4.style.borderRadius = '5px';
+    C5.style.backgroundColor = 'whitesmoke';
+    C5.style.color = 'black';
+    C5.style.borderRadius = '5px';
+    C6.style.backgroundColor = 'whitesmoke';
+    C6.style.color = 'black';
+    C6.style.borderRadius = '5px';
+    C7.style.backgroundColor = 'whitesmoke';
+    C7.style.color = 'black';
+    C7.style.borderRadius = '5px';
+    C8.style.backgroundColor = 'whitesmoke';
+    C8.style.color = 'black';
+    C8.style.borderRadius = '5px';
+    C9.style.backgroundColor = 'whitesmoke';
+    C9.style.color = 'black';
+    C9.style.borderRadius = '5px';
+    C10.style.backgroundColor = 'whitesmoke';
+    C10.style.color = 'black';
+    C10.style.borderRadius = '5px';
+    C11.style.backgroundColor = 'whitesmoke';
+    C11.style.color = 'black';
+    C11.style.borderRadius = '5px';
+    C12.style.backgroundColor = 'whitesmoke';
+    C12.style.color = 'black';
+    C12.style.borderRadius = '5px';
+
+  });
+  
+  
+  </script>
+</html>
